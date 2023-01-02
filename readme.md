@@ -13,3 +13,7 @@ using_list = list(map(int, sys.stdin.readline().split(" ")))
 ```
 
 This way will save time (faster than input()) and save the input as integer
+
+# Day 2
+
+use <code>print(""" ascii art """)</code> to print ascii art.
