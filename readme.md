@@ -62,3 +62,7 @@ while True:
     if(ori == int(num)): break
 print(result)
 ```
+
+# Day 5
+![1](img/1.jpeg)
+You can implement in one-dimensional list finding duplicate number.
