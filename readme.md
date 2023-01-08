@@ -20,7 +20,7 @@ Use <code>print(""" ascii art """)</code> to print ascii art.
 
 # Day 3
 Name Error in Python: Variable name is not exist <br>
-**Example)**
+**Example:**
 ```python
 # challenge #2525
 import sys
@@ -48,6 +48,7 @@ You have <code>range(1, n)</code>. If you want to start count from 1, use it.
 ***
 
 Use <code>.rstrip()</code> to get rid of "\n"<br>
+**Example:**
 ```python
 import sys 
 num = sys.stdin.readline().rstrip() # if you don't do this, num (str) will have \n
@@ -66,3 +67,89 @@ print(result)
 # Day 5
 ![1](img/1.jpeg)
 You can implement in one-dimensional list finding duplicate number.
+
+# Day 6
+
+You can use <code>set()</code> to delete duplicate nums. <br>
+**Example original code:**
+```python
+import sys
+remain = []
+for i in range(10):
+    n = int(sys.stdin.readline()) % 42
+    if n not in remain:
+        remain.append(n)
+print(len(remain))
+```
+
+instead of using <code>if n not in reamin:</code> <br>
+**Example, updated:**
+```python
+import sys
+remain = []
+for i in range(10):
+    remain.append(int(sys.stdin.readline())%42)
+remain = set(remain)
+print(len(remain))
+```
+
+***
+
+Use <code>print("%.3f" % float_value)</code> to print double/float value with strict decimal places. <br>
+Extra places will be rounded. <br>
+Integers also prints decimal places. <br>
+**Example:**
+```python
+float_value1 = 0.1234 
+float_value2 = 0.5678
+int_value = 10
+
+print("%.3f" % float_value1) # prints 0.123
+print("%.3f" % float_value2) # prints 0.568; 0.0008 will be rounded
+print("%.3f" % int_value) # prints 10.000
+```
+
+***
+
+You can use <code>sum()</code> to get sum of the list. <br>
+**Example:**
+```python
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum(list)) # prints 55
+```
+
+Moreover, you can use <code>sum(1 for i in range(5))</code> like this. <br>
+**Example:**
+```python
+print(sum(1 for i in range(5))) # prints 5
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum(1 for i in list[1:])) # prints 9
+```
+
+While apply this in problem #4344: <br>
+**Example, Original code**
+```python
+import sys
+cases = int(sys.stdin.readline())
+for i in range(cases):
+    scores = list(map(int, sys.stdin.readline().split()))
+    scores.pop(0)
+    sum = 0
+    for j in scores:
+        sum += j
+    avg = sum / len(scores)
+    result = 0
+    for j in scores:
+        if j > avg: result += 1
+    print("%.3f%%" % round((result / len(scores)*100), 3))
+```
+**Example, updated**
+```python
+import sys
+cases = int(sys.stdin.readline())
+for i in range(cases):
+    scores = list(map(int, sys.stdin.readline().split()))
+    avg = sum(scores[1:]) / scores[0] # you can get sum + avg like this
+    print("%.3f%%" % (100*sum(1 for i in scores[1:] if i > avg) / case[0])) 
+    # sum(1 for i in scores[1:] if i > avg) // in this part, 1 will be added when if ~ is true.
+```
