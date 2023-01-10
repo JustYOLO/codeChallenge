@@ -161,3 +161,17 @@ Using set() will help you to get rid of duplicate elements of the list. <br> See
 ***
 
 Use find() function to find char or string inside of string. <br> find() returns the index if finds, returns -1 if didn't finds. <br> See **Problem #10809** using find()
+
+# Day 8
+
+When you need to find the key that contains biggest value in dictionary, use: <code>max_c = max(dic, key=dic.get)</code> to get the key.
+
+***
+
+You can reverse a string with <code>string[::-1]</code> <br>
+**Example:**
+```python
+s = "python"
+s = s[::-1] # inverse a string
+print(s) # nohtyp
+```
