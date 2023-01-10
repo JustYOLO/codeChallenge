@@ -153,3 +153,11 @@ for i in range(cases):
     print("%.3f%%" % (100*sum(1 for i in scores[1:] if i > avg) / case[0])) 
     # sum(1 for i in scores[1:] if i > avg) // in this part, 1 will be added when if ~ is true.
 ```
+
+# Day 7
+
+Using set() will help you to get rid of duplicate elements of the list. <br> See **Problem #4673** to get more info.
+
+***
+
+Use find() function to find char or string inside of string. <br> find() returns the index if finds, returns -1 if didn't finds. <br> See **Problem #10809** using find()
