@@ -175,3 +175,23 @@ s = "python"
 s = s[::-1] # inverse a string
 print(s) # nohtyp
 ```
+
+# Day 15
+
+You can use .sort(key=) to specify sort options. <br>
+**Example:**
+```python
+list = ["i", "won", "hesitate", "no", "more"]
+list.sort(key=len) # sort by length. not in alphabetical
+
+# You can use lambda in key=
+list = [[0, 4], [1, 2], [1, -1], [2, 2], [3, 3]]
+list.sort(key= lambda x: (x[1], x[0])) # sort by element x[1]. if x[1] is same, sort by x[0]
+
+import re
+list = ("21 Junkyu", "21 Dohyun", "20 Sunyoung")
+p = re.compile(r'\d+')
+list.sort(key=lambda s: int(p.search(s).group()))
+# r'\d+' means return the num in the string. ("+" means longer than 1)
+```
+To get more info: <a href="https://engineer-mole.tistory.com/271">Click here</a>
