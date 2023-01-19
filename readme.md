@@ -198,7 +198,7 @@ To get more info: <a href="https://engineer-mole.tistory.com/271">Click here</a>
 
 # Day 17:
 
-Use .join(list()) to print elements in list
+Use .join(list()) to print elements in list<br>
 **Example:**
 ```python
 a = ['test', 'text']
