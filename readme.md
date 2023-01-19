@@ -195,3 +195,24 @@ list.sort(key=lambda s: int(p.search(s).group()))
 # r'\d+' means return the num in the string. ("+" means longer than 1)
 ```
 To get more info: <a href="https://engineer-mole.tistory.com/271">Click here</a>
+
+# Day 17:
+
+Use .join(list()) to print elements in list
+**Example:**
+```python
+a = ['test', 'text']
+print('_'.join(a)) # will print ->test_text
+print('\n'.join(a)) 
+# will print ->
+#test
+#text
+print('.\n'.join(a))
+# will print ->
+#test.
+#text
+```
+
+***
+
+review needed in problem <a href="BOJ/Day_17/2447.py">2447</a>
