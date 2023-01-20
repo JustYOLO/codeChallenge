@@ -215,4 +215,33 @@ print('.\n'.join(a))
 
 ***
 
-review needed in problem <a href="BOJ/Day_17/2447.py">2447</a>
+Review needed in problem <a href="BOJ/Day_17/2447.py">2447</a>
+
+# Day 18:
+
+Review need in problem <a href="BOJ/Day_18/11729.py">11729</a>
+
+***
+
+Use <code>import itertools</code> to get combinations or permutations in list<br>
+**Example:**
+
+```python
+# permutations
+from itertools import permutations
+
+for i in permutations([1,2,3,4], 2):
+    print(i, end=" ")
+'''(1, 2) (1, 3) (1, 4) (2, 1) (2, 3) (2, 4) (3, 1) (3, 2) (3, 4) (4, 1) (4, 2) (4, 3) '''
+```
+
+```python
+# combinations
+from itertools import combinations
+
+for i in combinations([1,2,3,4], 2):
+    print(i, end=" ")
+'''(1, 2) (1, 3) (1, 4) (2, 3) (2, 4) (3, 4)'''
+```
+
+<a href="https://juhee-maeng.tistory.com/91">More info</a>
