@@ -1,2 +1,4 @@
-for i in range(5, 2):
-    print(1)
+string = 'WHWHWHWHWHWH'
+tmp = []
+tmp.append(list(string))
+print(tmp)
