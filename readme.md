@@ -245,3 +245,13 @@ for i in combinations([1,2,3,4], 2):
 ```
 
 <a href="https://juhee-maeng.tistory.com/91">More info</a>
+
+# Day 20:
+
+Binary search is useful when the list is sorted. <br>
+<a href="BOJ/Day_20/10815.py">More Info</a>
+
+***
+
+set() is more faster than list in containment. <br>
+<a href="https://lsh424.tistory.com/59">More Info</a>
