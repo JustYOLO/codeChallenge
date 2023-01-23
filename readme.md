@@ -244,7 +244,7 @@ for i in combinations([1,2,3,4], 2):
 '''(1, 2) (1, 3) (1, 4) (2, 3) (2, 4) (3, 4)'''
 ```
 
-<a href="https://juhee-maeng.tistory.com/91">More info</a>
+<a href="https://juhee-maeng.tistory.com/91">More Info</a>
 
 # Day 20:
 
@@ -255,3 +255,22 @@ Binary search is useful when the list is sorted. <br>
 
 set() is more faster than list in containment. <br>
 <a href="https://lsh424.tistory.com/59">More Info</a>
+
+# Day 21:
+
+If you want to search dict with values, make a new dict that revsered the key and value. <br>
+**Example**
+```python
+pokedex = {} # orignal. "pokemon name" = key, "pokemon index(num)" = value
+rpokedex = {} # reversed
+n, m = map(int, stdin.readline().split())
+for i in range(1, n+1):
+    pokedex[stdin.readline().rstrip()] = i # get input
+rpokedex = {v:k for k,v in pokedex.items()} # reversed
+rpokedex = dict(map(reversed, pokedex.items())) # alternative
+```
+
+***
+
+<code>string.isdecimal</code> is used when judging that input is integer or string. <br>
+<a href="https://cotak.tistory.com/137">More Info</a>
