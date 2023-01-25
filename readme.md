@@ -274,3 +274,8 @@ rpokedex = dict(map(reversed, pokedex.items())) # alternative
 
 <code>string.isdecimal</code> is used when judging that input is integer or string. <br>
 <a href="https://cotak.tistory.com/137">More Info</a>
+
+# Day 22:
+
+You can rotate list while using deque in collections.<br>
+<a href="https://velog.io/@skkumin/Python-deque%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0">More Info</a>
