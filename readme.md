@@ -279,3 +279,16 @@ rpokedex = dict(map(reversed, pokedex.items())) # alternative
 
 You can rotate list while using deque in collections.<br>
 <a href="https://velog.io/@skkumin/Python-deque%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0">More Info</a>
+
+# Day 24
+
+```python
+from sys import stdin
+t = int(stdin.readline())
+arr = list(int(stdin.readline()) for i in range(t))
+print(*arr)
+print(*arr, sep="\n")
+```
+
+You can get multiple line input using <code>list(int(stdin.readline()) for i in range(t))</code><br>
+And print with <code>print(*arr)</code> to seperate with space. <br> use <code>sep=</code> to change attribute
