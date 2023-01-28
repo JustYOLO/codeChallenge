@@ -1,4 +1,2 @@
-string = 'WHWHWHWHWHWH'
-tmp = []
-tmp.append(list(string))
-print(tmp)
+from math import comb
+print(comb(200000000, 12))
