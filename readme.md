@@ -292,3 +292,23 @@ print(*arr, sep="\n")
 
 You can get multiple line input using <code>list(int(stdin.readline()) for i in range(t))</code><br>
 And print with <code>print(*arr)</code> to seperate with space. <br> use <code>sep=</code> to change attribute
+
+# Day 27
+
+Difference between .join() and print(*arr, sep=" ")
+```python
+from sys import stdin
+n, m = map(int, stdin.readline().split())
+arr = []
+def dfs():
+    if len(arr) == m:
+        print(*arr, sep=" ") # This line
+        return
+    for i in range(1, n+1):
+        if i not in arr:
+            arr.append(i)
+            dfs()
+            arr.pop()
+dfs()
+# you cannot use .join() in that line because .join() only accepts str. If you want to print integers, use print(*arr, sep=" ")
+```
