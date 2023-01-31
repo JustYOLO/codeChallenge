@@ -48,8 +48,8 @@ def promising(r, c):
     nr, nc = r//3*3, c//3*3
     for i in range(3):
         for j in range(3):
-            if board[nr+i][ny+j] in possible:
-                possible.remove(board[nr+i][ny+j])
+            if board[nr+i][nc+j] in possible:
+                possible.remove(board[nr+i][nc+j])
     
     return possible
 def dfs(x):
