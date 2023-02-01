@@ -316,3 +316,7 @@ dfs()
 # Day 28
 
 **Need to build python version of 9663 (time exceeded)**
+
+# Day 30
+
+**Make <a href="BOJ/Day_30/14888.py">14888</a> using dfs**
