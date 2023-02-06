@@ -55,7 +55,7 @@ for team1 in combinations(players, n//2):
 print(min)'''
 # another method?
 # Not that fast (pypy3: 1384ms)
-from sys import stdin
+'''from sys import stdin
 from itertools import combinations
 
 n = int(stdin.readline())
@@ -76,6 +76,31 @@ for team1 in combinations(players, n//2):
     t2_pow = 0
     for line in arr:
         t2_pow += sum(line)
+    if min > abs(t1_pow - t2_pow):
+        min = abs(t1_pow - t2_pow)
+print(min)'''
+from sys import stdin
+from itertools import combinations
+
+n = int(stdin.readline())
+arr = list(list(int(j) for j in stdin.readline().split()) for i in range(n))
+players = set(i for i in range(n))
+min = 1e10
+teams = list(combinations(players, n//2))
+
+for idx in range(len(teams)//2):
+    team1 = set(teams[idx])
+    team2 = set(teams[-1 + idx * -1])
+    t1_pow = 0
+    t2_pow = 0
+    for i in team1:
+        for j in team1:
+            if i == j: continue
+            t1_pow += arr[i][j]
+    for i in team2:
+        for j in team2:
+            if i == j: continue
+            t2_pow += arr[i][j]
     if min > abs(t1_pow - t2_pow):
         min = abs(t1_pow - t2_pow)
 print(min)

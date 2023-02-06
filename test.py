@@ -1,2 +1,4 @@
-test = {1, 2, 3, 4}
-print(test)
+b = '000000'
+print(b[1:3])
+b[1:3] = 11
+print(b)
