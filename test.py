@@ -1,4 +1,3 @@
-b = '000000'
-print(b[1:3])
-b[1:3] = 11
-print(b)
+arr = [0]
+if arr[0] == arr[1] and len(arr) >= 2:
+    print("flag")
