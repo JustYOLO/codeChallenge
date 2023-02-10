@@ -1,3 +1,3 @@
-arr = [0]
-if arr[0] == arr[1] and len(arr) >= 2:
-    print("flag")
+dic = {2:1, 3:1}
+print(dic[2])
+print(dic[3])
