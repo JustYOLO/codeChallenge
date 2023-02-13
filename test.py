@@ -1,3 +1,5 @@
-dic = {2:1, 3:1}
-print(dic[2])
-print(dic[3])
+result = list()
+result.append([1,2,3])
+for i in range(3):
+    for alist in result:
+        result.append([i, i, i])
