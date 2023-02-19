@@ -320,3 +320,8 @@ dfs()
 # Day 30
 
 **Make <a href="BOJ/Day_30/14888.py">14888</a> using dfs**
+
+# Day 43
+
+Passed <a href="BOJ/Day_43/11660.py">#11660</a>. <br>
+But add zeros at 0-indexs will make the code look easier and shorter.
