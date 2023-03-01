@@ -1,4 +1,4 @@
-from sys import stdin
-plus = '+'
-if plus.isdecimal:
-    print(True)
+from sys import stdin; input = stdin.readline
+
+arr = list()
+print(arr.pop())
