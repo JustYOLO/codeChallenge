@@ -1,1 +1,1 @@
-print(input())
+tmp = 0
