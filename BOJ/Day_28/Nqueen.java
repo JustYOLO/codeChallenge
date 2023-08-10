@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class Nqueen {
     static int count = 0;
@@ -37,3 +37,4 @@ public class Nqueen {
         System.out.println(count);
     }
 }
+*/
