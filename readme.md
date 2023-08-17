@@ -325,3 +325,9 @@ dfs()
 
 Passed <a href="BOJ/Day_43/11660.py">#11660</a>. <br>
 But add zeros at 0-indexs will make the code look easier and shorter.
+
+# Frequent System.out.print~ function call in Java
+
+Frequent print function call can cause time out. <br>
+Use **StringBuilder** when needed. <br>
+<a href="BOJ/Sliver/S28278.java">Example(#28278)</a>
