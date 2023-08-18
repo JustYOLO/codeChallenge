@@ -331,3 +331,8 @@ But add zeros at 0-indexs will make the code look easier and shorter.
 Frequent print function call can cause time out. <br>
 Use **StringBuilder** when needed. <br>
 <a href="BOJ/Sliver/S28278.java">Example(#28278)</a>
+
+# Java Stack class
+
+In java.util.Stack, class "Stack" is defined. <br>
+use ```javaStack<Element> = new Stack<>();```
