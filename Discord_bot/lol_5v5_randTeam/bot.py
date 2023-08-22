@@ -19,7 +19,9 @@ def shuffling(users):
     r.shuffle(users)
     for i in range(2):
         for j in range(5):
-            result += str(i+1) + "팀 "+ lane[j] + " " + users[j+5*i] + "\n"
+            out = r.choice(users)
+            result += str(i+1) + "팀 "+ lane[j] + " " + out + "\n"
+            users.remove(out)
         if i == 0:
             result += "-----------------------\n"
     
@@ -28,6 +30,8 @@ def shuffling(users):
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+    for guild in client.guilds:
+        print(f"connected in {guild}")
 
 @client.event
 async def on_message(message):
@@ -40,11 +44,19 @@ async def on_message(message):
         print(message.author.global_name)
     
     if message.content.startswith("!사용법"):
-        await message.channel.send("!참가 이름\n이름 부분에 자기 이름을 적어주세요.\n처음부터 시작하고 싶으시면 !리셋")
+        await message.channel.send("!참가 라고 적으세요!\n10명이 !참가 를! 적으면 랜덤하게 팀을 만들어 줍니다.\n처음부터 시작하고 싶으시면 !리셋")
     if message.content.startswith("!리셋"):
         users.clear()
         await message.channel.send("리셋 되었습니다.")
 
+    # !t is for testing purpose
+    '''if message.content.startswith("!t"):
+        tmp, name = message.content.split(' ')
+        users.append(name)
+        if len(users) == 10:
+            await message.channel.send(shuffling(users))
+            users.clear()'''
+            
     if message.content.startswith("!참가"):
         if name not in users:
             users.append(name)
@@ -53,11 +65,5 @@ async def on_message(message):
                 await message.channel.send(shuffling(users))
                 users.clear()
         else: await message.channel.send(f"{name}님은 이미 참가 신청하셨습니다.")
-    '''if message.content.startswith("!참가"):
-        tmp, name = message.content.split(' ')
-        users.append(name)
-        if len(users) == 10:
-            await message.channel.send(shuffling(users))
-            users.clear()'''
 
 client.run(TOKEN)
