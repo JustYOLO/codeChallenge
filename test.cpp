@@ -1,13 +1,16 @@
 #include <iostream>
-#include <string>
+#include <stack>
 using namespace std;
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    string name;
-    cin >> name;
-    if(name == "ENTER") cout << "yep";
-    cin >> name;
+
+    stack<int> s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    cout << s.top();
 }
