@@ -1,12 +1,13 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    int a, b, c, d;
-    cin >> a >> b >> c;
-    cout << a << b << c;
-    return 0;
+    string name;
+    cin >> name;
+    if(name == "ENTER") cout << "yep";
+    cin >> name;
 }

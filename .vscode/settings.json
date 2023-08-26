@@ -2,6 +2,7 @@
     "python.analysis.typeCheckingMode": "off",
     "files.associations": {
         "vector": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "iosfwd": "cpp"
     }
 }
