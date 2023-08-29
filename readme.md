@@ -336,3 +336,12 @@ Use **StringBuilder** when needed. <br>
 
 In java.util.Stack, class "Stack" is defined. <br>
 use ```javaStack<Element> = new Stack<>();```
+
+# C++ sort() function
+
+In algorithm, sort() function helps sorting vectors. <br>
+```c++
+sort(vec.begin(), vec.end(), comp)
+``` 
+You can set sorting order by **comp**. <br>
+More info in <a href="BOJ/Sliver/20920.cpp">Example(#20920)</a>
