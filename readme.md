@@ -335,7 +335,10 @@ Use **StringBuilder** when needed. <br>
 # Java Stack class
 
 In java.util.Stack, class "Stack" is defined. <br>
-use ```javaStack<Element> = new Stack<>();```
+use 
+```java
+Stack<Element> = new Stack<>();
+```
 
 # C++ sort() function
 

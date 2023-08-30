@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "S4779",
+            "request": "launch",
+            "mainClass": "S4779",
+            "projectName": "codeChallenge_56385cc6"
+        },
+        {
+            "type": "java",
             "name": "S26069",
             "request": "launch",
             "mainClass": "S26069",

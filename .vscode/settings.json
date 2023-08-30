@@ -7,5 +7,6 @@
         "stack": "cpp",
         "utility": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }
