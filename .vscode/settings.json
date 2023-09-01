@@ -6,7 +6,10 @@
         "iosfwd": "cpp",
         "stack": "cpp",
         "utility": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "set": "cpp",
+        "limits": "cpp",
+        "chrono": "cpp"
     },
     "java.debug.settings.onBuildFailureProceed": true
 }
