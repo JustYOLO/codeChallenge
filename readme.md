@@ -348,3 +348,16 @@ sort(vec.begin(), vec.end(), comp)
 ``` 
 You can set sorting order by **comp**. <br>
 More info in <a href="BOJ/Sliver/20920.cpp">Example(#20920)</a>
+
+# C++ local / global variable difference
+
+global variable: default value 0, stored at heap.
+<br>
+local variable: need to reset the value (initially stores trash value), stored at stack. <br>
+
+About stack:
+>On Windows using VC++ it's 1MB by default, on Linux it's typically 8MB.
+<br>
+<a href="https://stackoverflow.com/questions/24904047/maximum-size-of-local-array-variable">stack overflow Q&A</a> <br>
+
+<a href="BOJ/Gold/11066.cpp">In 11066.cpp, arrays should declared in global</a>
